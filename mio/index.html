@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido | Pamiamor</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* ENCABEZADO */
+        .navbar {
+            background: #ffffff;
+            padding: 18px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,.08);
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-link {
+            color: #444;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: #2563eb;
+        }
+
+        /* PORTADA */
+        .hero {
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            color: white;
+            background:
+                linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .btn-principal {
+            background: #2563eb;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .btn-principal:hover {
+            background: #1d4ed8;
+            color: white;
+        }
+
+        /* SECCIÓN DE CONTENIDO */
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 22px;
+        }
+
+        /* ZÓCALO / FOOTER */
+        footer {
+            background: #172033;
+            color: #ddd;
+            padding: 45px 0 20px;
+            margin-top: 60px;
+        }
+
+        footer h5 {
+            color: white;
+            margin-bottom: 18px;
+        }
+
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            font-size: 23px;
+            margin-right: 15px;
+        }
+
+        .copyright {
+            border-top: 1px solid #394357;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero {
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-globe-americas"></i> Pamiamor
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- PORTADA PRINCIPAL -->
+<header class="hero">
+    <div class="container">
+        <h1>Bienvenido a Pamiamor</h1>
+
+        <p>
+            Descubrí un espacio creado para compartir ideas,
+            explorar nuevas posibilidades y conectar con
+            experiencias increíbles.
+        </p>
+
+        <a href="#servicios" class="btn-principal">
+            Explorar ahora <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
+</header>
+
+<!-- NOSOTROS -->
+<section class="container py-5" id="nosotros">
+    <div class="text-center mb-5">
+        <h2 class="section-title">Un espacio para descubrir</h2>
+        <p class="text-muted">
+            Conocé todo lo que tenemos preparado para vos.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+                     alt="Espacio de trabajo">
+
+                <div class="card-body">
+                    <h5>Innovación</h5>
+                    <p class="text-muted">
+                        Nuevas ideas y herramientas para
+                        construir mejores experiencias.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
+                     alt="Trabajo en equipo">
+
+                <div class="card-body">
+                    <h5>Conexión</h5>
+                    <p class="text-muted">
+                        Un lugar para compartir, colaborar
+                        y desarrollar nuevas oportunidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                     alt="Tecnología">
+
+                <div class="card-body">
+                    <h5>Tecnología</h5>
+                    <p class="text-muted">
+                        Exploramos soluciones digitales
+                        para facilitar el día a día.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECCIÓN DESTACADA -->
+<section class="container py-4">
+    <div class="row align-items-center g-4">
+
+        <div class="col-md-6">
+            <img
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85"
+                class="img-fluid rounded-4"
+                alt="Oficina moderna">
+        </div>
+
+        <div class="col-md-6">
+            <h2>Construyamos algo increíble</h2>
+
+            <p class="text-muted mt-3">
+                Este es el comienzo de un nuevo proyecto.
+                Un espacio donde las ideas se convierten
+                en oportunidades y cada detalle importa.
+            </p>
+
+            <a href="#contacto" class="btn btn-primary mt-2">
+                Contactanos
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ZÓCALO -->
+<footer id="contacto">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <h5><i class="bi bi-globe-americas"></i> Pamiamor</h5>
+
+                <p>
+                    Un espacio digital para descubrir,
+                    aprender y compartir.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Enlaces rápidos</h5>
+
+                <a href="#">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Seguinos</h5>
+
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Pamiamor. Todos los derechos reservados.
+        </div>
+
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
